@@ -1,0 +1,149 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600 */
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    text-align: center;
+    
+}
+
+/* Header section */
+#title-section{
+    padding: 3% 5% 0 5%;
+}
+header>h1{
+    font-size: 2rem;
+    margin: 5px 0;
+    color:hsl(234, 12%, 34%);
+}
+
+#title{
+    font-weight: 200;
+}
+#title-two{
+    font-weight: 700;
+}
+#title-desc{
+    
+    display: inline-block;
+    width: 45%;
+    color: hsl(229, 6%, 66%);
+}
+
+/* Cards (general styles)*/
+.card-container{
+    text-align: center;
+    padding: 1% 10% 0 10%;
+    margin-bottom: 5%;
+    
+}
+.card-item{
+    display: inline-block;
+    width: 85%;
+    height: 275px;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 20px hsl(180, 62%, 55%);
+    border-radius: 8px;
+    padding: 5%;
+}
+.card-item>h1{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+    color:hsl(234, 12%, 34%);
+}
+.card-item>p{
+    text-align: left;
+    color: hsl(229, 6%, 66%);
+    width: 75%;
+    margin: 0;
+}
+.symbol{
+    float: right;
+    margin-top: 10%;
+    margin-right: 4%;
+}
+
+/* Seperate card styling */
+
+#supervisor-card{
+    margin-left: 10%;
+    margin-top: 20%;
+    border-top: 5px hsl(180, 62%, 55%) solid;
+}
+
+#builder-card{
+    border-top: 5px hsl(0, 78%, 62%) solid;  
+}
+
+#karma-card{
+    border-top: 5px hsl(34, 97%, 64%) solid;
+}
+#calculator-card{
+    margin-right: 10%;
+    margin-top: 20%;
+    border-top: 5px hsl(212, 86%, 64%) solid;
+}
+/*Media query to remove margin on mobile*/
+@media((min-width: 370px) and (max-width: 970px)){
+    #supervisor-card{
+        margin-left: 0;
+        margin-top: 0;
+        border-top: 5px hsl(180, 62%, 55%) solid;
+    }
+    
+    #builder-card{
+        border-top: 5px hsl(0, 78%, 62%) solid;  
+    }
+    
+    #karma-card{
+        border-top: 5px hsl(34, 97%, 64%) solid;
+    }
+    #calculator-card{
+        margin-right: 0;
+        margin-top: 0;
+        border-top: 5px hsl(212, 86%, 64%) solid;
+    }
+    
+    #title-desc{
+    
+        display: inline-block;
+        width: 100%;
+        color: hsl(229, 6%, 66%);
+    }
+}
